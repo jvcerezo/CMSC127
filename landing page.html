@@ -1,0 +1,148 @@
+<html>
+   
+<script>
+    $('input[name="group"]').on('change', function() {
+      $('input[name="group"]').not(this).prop('checked', false);
+    });
+
+    function showText(value) {
+        // hide all text elements
+        document.getElementById("opt1txt").style.display = "none";
+        document.getElementById("opt2txt").style.display = "none";
+        document.getElementById("opt3txt").style.display = "none";
+        
+        // show the text element for the selected radio button
+        document.getElementById(value + "txt").style.display = "block";
+      }
+  </script>
+
+  <style>
+    body {
+      font-size: 18px;
+    }
+  </style>
+
+    <title>
+        Membership Form
+    </title>
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+    <head>
+       <b> The Board Of Trustees</b><br>
+       Company A <br>
+       Company A Complex <br>
+       Company A Address <br><br>
+    </head>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+    <body>
+        <p>
+            <h> We would like to apply membership at <b>Company A Export Federation</b></h>
+        </p>
+
+        
+        <input type="radio" name="group" value="opt1" onchange="showtext('opt1')"> Regular member </input> <br>
+        <input type="radio" name="group" value="opt2" onchange="showtext('opt2')"> Associate member </input> <br>
+        <input type="radio" name="group" value="opt3" onchange="showtext('opt3')"> Provisional member </input> <br> <br>
+
+        <div style="border: 1px solid black; padding: 10px;">
+
+        <h>Qualifications: </h><br>
+        <p>for Associate member/s: (please check the qualifications you have)<br>
+            <input type="checkbox" name="grouP" value="Opt1">1. Registered exporter of goods and/or services.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt2">2. In operation for at least one year.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt3">3. Sponsored by any member of the Board of Trustees.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt4">4. No serious derogatory information about them supplied by reliable sources</input> <br><br>
+        </p>
+
+        <p>for Provisional member/s: (please check the qualifications you have)<br>
+            <input type="checkbox" name="grouP" value="Opt1">1. Companies other than direct exporters that contribute to the 
+            Philippine exports such as:<br>
+
+            a. Banks<br>
+            b. shipping companies<br>
+            c. Airline companies<br>
+            d. Insurance Companies <br>
+            e. Chamber of commerce/ trade associations<br>
+            f. Trucking/freight companies <br>
+            g. Brokers/forwarders<br>
+            h. Producers of packing materials<br>
+            i. Foreign Buyers <br>
+            j. Printers <br>
+            k. Hotels <br>
+            l. Trading companies <br>
+            m. others: (please specify)<input type="text" name=? size=?><br>
+        </input>
+
+            <input type="checkbox" name="grouP" value="Opt2">2. Registered in the Philippines.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt3">3. In operation for atleast one year.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt3">4. Sponsored by any member of the Board of Trustees.</input> <br>
+            <input type="checkbox" name="grouP" value="Opt4">5. No serious derogatory information about them supplied by reliable sources</input> <br>
+        </p>
+       </div>
+
+        <p>
+            We understand that an annual membership of P2,000 and a one-time entrance free of P700.00 is payable on the date of approval of application. <br>
+            <br>
+            Enclosed are our accomplished company and product forms. (Applicants for Associate Membership do not need to submit product profile forms.)
+            <br>
+            <br>
+            *Applicants who have been in operation for less than one(1) year, but who otherwise qualify as regular members, shall be admitted as provisional members.
+            <br>
+            <br>
+
+
+            <div style="border: 1px solid black; padding: 10px;">
+            Sponsored by: Very truly yours,
+            <br>
+            <br>
+            Trustee: <input type="text" name=? size=?><br>
+            <label for="myfile">
+            Signature of Trustee: (Upload Digital Signature)</label>
+            <input type="file" id="myfile" name="myfile" /><br>
+            Name of Company: <input type="text" name=? size=?><br>
+            Authorized Representative: <input type="text" name=? size=?><br>
+            <label for="myfile">
+            Signature of Authorized Representative: (Upload Digital Signature)</label>
+            <input type="file" id="myfile" name="myfile" /><br>
+            Date: <input type="date" name=? size=?><br>
+            </div>
+            <p>
+                We wish to be classified under the following industry sector:**<br>
+                (Check only one industry category; if involved in more than one industry, choose the industry sector to which you most like to belong)<br><br>
+
+                <input type="checkbox" name="" value="">Automotive Parts and Accessories</input> <br>
+                <input type="checkbox" name="" value="">Chemicals</input> <br>
+                <input type="checkbox" name="" value="">Electronics</input> <br>
+                <input type="checkbox" name="" value="">Fashion accessories fine jewelry</input> <br>
+                <input type="checkbox" name="" value="">Fresh and Processed food</input> <br>
+                <input type="checkbox" name="" value="">Furniture</input> <br>
+                <input type="checkbox" name="" value="">Garments</input> <br>
+                <input type="checkbox" name="" value="">GIfts, Toys, and Housewares</input> <br>
+                <input type="checkbox" name="" value="">Information technology products and Services</input> <br>
+                <input type="checkbox" name="" value="">Metal Manufacturers</input> <br>
+                <input type="checkbox" name="" value="">Non-Metallic Mineral Manufacturers</input> <br>
+                <input type="checkbox" name="" value="">Resource-based products(traditional and non-traditional)</input> <br>
+                <input type="checkbox" name="" value="">Textile yarns and fabrics</input> <br><br>
+
+                *This name must be that of the person designated as the contact person in the Company A company profile.<br>
+                This person will be expected to attend all special and general membership meetings. If unable to attend any <br>
+                meeting, this person must assign his proxy to his appointed representative or to Company A. <br><br>
+
+                **If you have questions regarding the classification of your company, please contact MEMBERSHIP DIVISION. <br><br>
+
+                IMPORTANT: Please enclose picture/brochures ( promotional materials) of your products/services you offered.<br>
+                <label for="myfile">
+                    (Upload here)</label>
+                    <input type="file" id="myfile" name="myfile" /><br><br>
+
+            </p>
+            <input type="submit" value="Next" /> <br><br> 
+            </p>
+
+    </body>
+    </div>
+</html>

@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>
+            Product Sheet
+        </title>
+    </head>
+    <body>
+        <section>
+        <h3>Product Sheet</h3>
+        <form>
+            <div>
+                <label for="company_name">Company Name</label>
+                <input type="text" name="company_name" id="company_name" />
+            </div>
+            <div>
+                <label for="product_name">Product Name</label>
+                <input type="text" name="product_name" id="product_name" />
+            </div>
+            <div>
+                <label for="product_description">Product Description and Specifications</label>
+                <input type="text" name="product_description" id="product_description" />
+            </div>
+            <div>
+                <label for="brand_name">Brand Name</label>
+                <input type="text" name="brand_name" id="brand_name" />
+            </div>
+            <div>
+                <label for="brand_type">Brand Type</label>
+                <select name="brand_type" id="brand_type">
+                    <option value="1">Local</option>
+                    <option value="2">Export</option>
+                </select>
+            </div>
+            <div>
+                <label for="product_technical">Technical</label>
+                <input type="text" name="product_technical" id="product_technical" />
+            </div>
+            <div>
+                <label for="product_function">Function</label>
+                <input type="text" name="product_function" id="product_function" />
+            </div>
+            <div>
+                <label for="product_sizes">Sizes</label>
+                <select name="product_sizes" id="product_sizes">
+                    <option value="1">Size 1</option>
+                    <option value="2">Size 2</option>
+                    <option value="3">Size 3</option>
+                    <option value="4">Size 4</option>
+                    <option value="5">Size 5</option>
+                </select>
+            </div>
+            <div>
+                <label for="product_packaging">Packaging</label>
+                <input type="text" name="product_packaging" id="product_packaging" />
+            </div>
+            <div>
+                <label for="product_labelling">Labelling</label>
+                <input type="text" name="product_labelling" id="product_labelling" />
+            </div>
+            <div>
+                <label for="product_marking">Marking</label>
+                <input type="text" name="product_marking" id="product_marking" />
+            </div>
+        </form>
+    </section>
+    <section>
+        <h3>Package Information</h3>
+        <form>
+            <div>
+                <label for="product_packing_details">Packing Details</label>
+                <input type="text" name="product_details" id="product_details" />
+            </div>
+            <div>
+                <label for="product_unit">Unit</label>
+                <input type="text" name="product_unit" id="product_unit" />
+            </div>
+            <div>
+                <label for="product_netweight">Net weight per unit</label>
+                <input type="text" name="product_netweight" id="product_netweight" />
+            </div>
+            <div>
+                <label for="product_grossweight">Gross Weight per unit</label>
+                <input type="text" name="product_grossweight" id="product_grossweight" />
+            </div>
+            <div>
+                <label for="product_number_of_units">No. of Units per pack</label>
+                <input type="text" name="product_number_of_units" id="product_number_of_units" />
+            </div>
+            <div>
+                <label for="product_weight_per_pack">Weight per pack</label>
+                <input type="text" name="product_weight_per_pack" id="product_weight_per_pack" />
+            </div>
+            <div>
+                <label for="product_units_per_20fcl">No. of Units per 20 FCL</label>
+                <input type="text" name="product_units_per_20fcl" id="product_units_per_20fcl" />
+            </div>
+            <div>
+                <label for="product_units_per_40fcl">No. of Units per 40 FCL</label>
+                <input type="text" name="product_units_per_40fcl" id="product_units_per_40fcl" />
+            </div>
+            <div>
+                <label for="product_materials_required">Major Raw Materials/Components Used</label>
+                <input type="text" name="product_materials_required" id="product_materials_required" />
+            </div>
+            <div>
+                <label for="license">License</label>
+                <input type="file" id="license" name="license">
+              </div>   
+              <div>
+                <input type="checkbox" id="samples" name="salesAids[]" value="samples">
+                <label for="samples">Samples</label>
+              </div>
+              <div>
+                <input type="checkbox" id="photos" name="salesAids[]" value="photos">
+                <label for="photos">Photos</label>
+              </div>
+              <div>
+                <input type="checkbox" id="catalogues" name="salesAids[]" value="catalogues">
+                <label for="catalogues">Catalogues</label>
+              </div>
+              <div>
+                <input type="checkbox" id="priceList" name="salesAids[]" value="priceList">
+                <label for="priceList">Price List</label>
+              </div>
+              <div>
+                <input type="checkbox" id="others" name="salesAids[]" value="others">
+                <label for="others">Others: </label>
+                <input type="text" id="otherSalesAids" name="otherSalesAids" placeholder="Please specify">
+              </div>
+         </form>
+        </section>
+    </body>
+</html>
